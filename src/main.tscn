@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://ybgu6it3qqn4"]
+
+[ext_resource type="PackedScene" uid="uid://c6qnu0l2i6j88" path="res://src/rock.tscn" id="1_eewff"]
+[ext_resource type="PackedScene" uid="uid://b6dqr4jj5ysof" path="res://src/player.tscn" id="2_gh0ne"]
+
+[node name="Main" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -2061.0
+offset_top = -870.0
+offset_right = 1591.0
+offset_bottom = 659.0
+color = Color(0, 0.3254902, 0.4627451, 1)
+
+[node name="Floor" parent="." instance=ExtResource("1_eewff")]
+position = Vector2(-171, 757)
+scale = Vector2(100, 10)
+
+[node name="Rocks" type="Node2D" parent="."]
+
+[node name="Rock" parent="Rocks" instance=ExtResource("1_eewff")]
+position = Vector2(533, 7)
+scale = Vector2(2, 6)
+
+[node name="Rock2" parent="Rocks" instance=ExtResource("1_eewff")]
+position = Vector2(24, 213)
+scale = Vector2(10, 3)
+
+[node name="Rock3" parent="Rocks" instance=ExtResource("1_eewff")]
+position = Vector2(-435, 138)
+scale = Vector2(8, 12)
+
+[node name="Rock4" parent="Rocks" instance=ExtResource("1_eewff")]
+position = Vector2(641, -114)
+scale = Vector2(15, 4)
+
+[node name="Rock9" parent="Rocks" instance=ExtResource("1_eewff")]
+position = Vector2(-1810, 280)
+scale = Vector2(15, 4)
+
+[node name="Rock5" parent="Rocks" instance=ExtResource("1_eewff")]
+position = Vector2(-103.99999, -351.99997)
+scale = Vector2(10, 20)
+
+[node name="Rock6" parent="Rocks" instance=ExtResource("1_eewff")]
+position = Vector2(-910.99994, -217.00005)
+scale = Vector2(10, 20)
+
+[node name="Rock7" parent="Rocks" instance=ExtResource("1_eewff")]
+position = Vector2(-1294, -534.99994)
+scale = Vector2(10, 20)
+
+[node name="Rock8" parent="Rocks" instance=ExtResource("1_eewff")]
+position = Vector2(-1677.0001, -463.00006)
+scale = Vector2(10, 20)
+
+[node name="Player" parent="." instance=ExtResource("2_gh0ne")]
