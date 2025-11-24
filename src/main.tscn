@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://ybgu6it3qqn4"]
+[gd_scene load_steps=8 format=3 uid="uid://ybgu6it3qqn4"]
 
 [ext_resource type="Texture2D" uid="uid://jx7o7k5ipte2" path="res://art/bg.png" id="1_5q4o7"]
 [ext_resource type="PackedScene" uid="uid://c6qnu0l2i6j88" path="res://src/rock.tscn" id="1_eewff"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://6jyyw5g35u08" path="res://src/rock_1.tscn" id="3_3cfgd"]
 [ext_resource type="PackedScene" uid="uid://bivykae6umkba" path="res://src/rock_2.tscn" id="4_fyndt"]
 [ext_resource type="PackedScene" uid="uid://yylbk60s7pj2" path="res://src/rock_3.tscn" id="5_kmhfv"]
+[ext_resource type="AudioStream" uid="uid://b63jpmm3a1scs" path="res://audio/underwater-ambience.mp3" id="7_rlaii"]
 
 [node name="Main" type="Node2D"]
 
@@ -291,3 +292,7 @@ position = Vector2(3411.9998, -890.0001)
 rotation = 4.712389
 
 [node name="Player" parent="." instance=ExtResource("2_gh0ne")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_rlaii")
+autoplay = true
