@@ -5,7 +5,18 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -50.0
 
 
+var texture_normal = preload("res://art/goose.png")
+var texture_diving = preload("res://art/goosebump.png")
+
 @onready var sprite: Sprite2D = $Sprite2D
+
+
+func _input(event):
+	if event.is_action_pressed("explore"):
+		sprite.texture = texture_diving  # TODO: do this properly later
+		velocity = Vector2.ZERO
+	elif event.is_action_released("explore"):
+		sprite.texture = texture_normal
 
 
 func _physics_process(delta: float) -> void:
@@ -29,6 +40,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		pass
 
+	# TODO: prevent movement while diving?
 	move_and_slide()
 	
 	if direction_lr < 0:
