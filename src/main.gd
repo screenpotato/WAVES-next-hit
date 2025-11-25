@@ -5,11 +5,14 @@ extends Node2D
 @onready var score_label: Label = $CanvasLayer/ScoreLabel
 @onready var clue_popup: PopupPanel = $CanvasLayer/PopupPanel
 @onready var popup_label: Label = $CanvasLayer/PopupPanel/PopupLabel
+@onready var audio_player: AudioStreamPlayer = $AudioStreamPlayer
+@onready var player: CharacterBody2D = $Player
 
 var clues_found: int = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	player.diving.connect(_on_player_diving)
 	for clue: Node in clues.get_children():
 		clue.player_entered.connect(_on_clue_player_entered)
 
@@ -31,3 +34,7 @@ func _on_clue_player_entered(clue):
 
 func _on_button_button_up() -> void:
 	clue_popup.hide()  # good enough for now, but someone needs to properly design this at some point
+
+
+func _on_player_diving() -> void:
+	audio_player.play()
