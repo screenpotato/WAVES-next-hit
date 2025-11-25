@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://6jyyw5g35u08" path="res://src/rock_1.tscn" id="3_3cfgd"]
 [ext_resource type="PackedScene" uid="uid://bivykae6umkba" path="res://src/rock_2.tscn" id="4_fyndt"]
 [ext_resource type="PackedScene" uid="uid://yylbk60s7pj2" path="res://src/rock_3.tscn" id="5_kmhfv"]
-[ext_resource type="PackedScene" path="res://src/item.tscn" id="8_5mrjc"]
+[ext_resource type="PackedScene" uid="uid://w67es3r38738" path="res://src/item.tscn" id="8_5mrjc"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_rlaii")
@@ -293,8 +293,6 @@ rotation = 1.7453293
 position = Vector2(3411.9998, -890.0001)
 rotation = 4.712389
 
-[node name="Player" parent="." instance=ExtResource("2_gh0ne")]
-
 [node name="Clues" type="Node" parent="."]
 
 [node name="Item1" parent="Clues" instance=ExtResource("8_5mrjc")]
@@ -314,3 +312,14 @@ position = Vector2(-3730, -298)
 
 [node name="Item6" parent="Clues" instance=ExtResource("8_5mrjc")]
 position = Vector2(114, 155)
+
+[node name="Player" parent="." instance=ExtResource("2_gh0ne")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ScoreLabel" type="Label" parent="CanvasLayer"]
+offset_left = 19.0
+offset_top = 15.0
+offset_right = 146.0
+offset_bottom = 38.0
+text = "Clues found: 0/6"

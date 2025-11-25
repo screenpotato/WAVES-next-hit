@@ -2,6 +2,7 @@ extends Node2D
 
 
 @onready var clues: Node = $Clues
+@onready var score_label: Label = $CanvasLayer/ScoreLabel
 
 
 var clues_found: int = 0
@@ -18,4 +19,6 @@ func _process(delta: float) -> void:
 
 
 func _on_clue_player_entered(clue):
+	clues_found += 1
+	score_label.text = "Clues found: %d/6" % clues_found
 	clue.queue_free()
