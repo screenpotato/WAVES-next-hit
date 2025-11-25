@@ -52,7 +52,7 @@ ui_down={
 
 [physics]
 
-2d/default_gravity=100.0
+2d/default_gravity=0.0
 
 [rendering]
 
