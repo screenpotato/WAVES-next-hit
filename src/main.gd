@@ -27,3 +27,7 @@ func _on_clue_player_entered(clue):
 	# needs to be turned into a proper UI later on
 	clue_popup.popup_centered()
 	clue.queue_free()
+
+
+func _on_button_button_up() -> void:
+	clue_popup.hide()  # good enough for now, but someone needs to properly design this at some point
