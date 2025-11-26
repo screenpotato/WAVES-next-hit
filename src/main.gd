@@ -7,14 +7,23 @@ extends Node2D
 @onready var popup_label: Label = $CanvasLayer/PopupPanel/PopupLabel
 @onready var audio_player: AudioStreamPlayer = $AudioStreamPlayer
 @onready var player: CharacterBody2D = $Player
+@onready var inventory_panel: PanelContainer = $CanvasLayer/Inventory
 
 var clues_found: int = 0
+var items_in_inventory: Array = []
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	player.diving.connect(_on_player_diving)
 	for clue: Node in clues.get_children():
 		clue.player_entered.connect(_on_clue_player_entered)
+
+
+func _input(event) -> void:
+	if event.is_action_pressed("inventory"):
+		inventory_panel.visible = not inventory_panel.visible
+		# TODO: pause game while inventory is open?
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

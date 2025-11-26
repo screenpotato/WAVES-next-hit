@@ -369,6 +369,19 @@ offset_right = 96.0
 offset_bottom = 96.0
 text = "Close"
 
+[node name="Inventory" type="PanelContainer" parent="CanvasLayer"]
+visible = false
+offset_left = 482.0
+offset_top = 208.0
+offset_right = 689.0
+offset_bottom = 331.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="CanvasLayer/Inventory"]
+layout_mode = 2
+text = "INVENTORY PLACEHOLDER"
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("9_kf8lf")
 
