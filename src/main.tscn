@@ -79,12 +79,7 @@ rotation = 3.1415927
 scale = Vector2(2.5, 4)
 
 [node name="Rock38" parent="Rocks" instance=ExtResource("3_3cfgd")]
-position = Vector2(-1459, -1624)
-rotation = 3.1415927
-scale = Vector2(2.5, 4)
-
-[node name="Rock39" parent="Rocks" instance=ExtResource("3_3cfgd")]
-position = Vector2(-1459, -1624)
+position = Vector2(-1470.0001, -1874)
 rotation = 3.1415927
 scale = Vector2(2.5, 4)
 
@@ -99,21 +94,12 @@ rotation = 3.1415927
 scale = Vector2(2.5, 4)
 
 [node name="Rock24" parent="Rocks" instance=ExtResource("3_3cfgd")]
-position = Vector2(321, 520)
-scale = Vector2(2.5, 4)
-
-[node name="Rock32" parent="Rocks" instance=ExtResource("3_3cfgd")]
-position = Vector2(2742, 60.00006)
-rotation = 4.712389
+position = Vector2(604, 1738)
 scale = Vector2(2.5, 4)
 
 [node name="Rock31" parent="Rocks" instance=ExtResource("3_3cfgd")]
 position = Vector2(-2550, 1111)
 scale = Vector2(2.5, 4)
-
-[node name="Rock20" parent="Rocks" instance=ExtResource("3_3cfgd")]
-position = Vector2(-1555, 90)
-rotation = 3.1415927
 
 [node name="Rock11" parent="Rocks" instance=ExtResource("4_fyndt")]
 position = Vector2(-3269, -1501)
@@ -140,10 +126,6 @@ position = Vector2(-2831, -799)
 position = Vector2(-971, 1087)
 rotation = 3.1415927
 
-[node name="Rock26" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(1035, 398)
-scale = Vector2(0.2, 0.5)
-
 [node name="Rock28" parent="Rocks" instance=ExtResource("5_kmhfv")]
 position = Vector2(-1881, -511)
 scale = Vector2(0.2, 0.5)
@@ -152,25 +134,16 @@ scale = Vector2(0.2, 0.5)
 position = Vector2(-1881, 500)
 scale = Vector2(0.2, 0.5)
 
-[node name="Rock60" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(-210, -348)
-scale = Vector2(0.2, 0.5)
-
 [node name="Rock61" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(149, -122)
+position = Vector2(1183, -233)
 scale = Vector2(0.2, 0.5)
 
 [node name="Rock62" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(245, -402)
+position = Vector2(417, 271)
 scale = Vector2(0.2, 0.5)
 
 [node name="Rock63" parent="Rocks" instance=ExtResource("5_kmhfv")]
 position = Vector2(-31, -690)
-scale = Vector2(0.2, 0.5)
-
-[node name="Rock42" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(50, 302)
-rotation = 1.5707964
 scale = Vector2(0.2, 0.5)
 
 [node name="Rock49" parent="Rocks" instance=ExtResource("5_kmhfv")]
@@ -193,53 +166,8 @@ position = Vector2(-1521, -288)
 rotation = 1.5707964
 scale = Vector2(0.2, 0.5)
 
-[node name="Rock43" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(-956, -76)
-rotation = 1.5707964
-scale = Vector2(0.2, 0.5)
-
-[node name="Rock44" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(-739, 212)
-rotation = 1.5707964
-scale = Vector2(0.2, 0.5)
-
-[node name="Rock45" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(-143, 551)
-rotation = 1.5707964
-scale = Vector2(0.2, 0.5)
-
-[node name="Rock46" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(-2482, -305)
-rotation = 1.5707964
-scale = Vector2(0.2, 0.5)
-
-[node name="Rock51" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(-2741, -585)
-rotation = 1.5707964
-scale = Vector2(0.2, 0.5)
-
 [node name="Rock52" parent="Rocks" instance=ExtResource("5_kmhfv")]
 position = Vector2(-2942, -347.00006)
-rotation = 1.5707964
-scale = Vector2(0.2, 0.5)
-
-[node name="Rock59" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(-298, 75)
-rotation = 1.5707964
-scale = Vector2(0.2, 0.5)
-
-[node name="Rock53" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(-3209, -548)
-rotation = 1.5707964
-scale = Vector2(0.2, 0.5)
-
-[node name="Rock54" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(-3426, -314)
-rotation = 1.5707964
-scale = Vector2(0.2, 0.5)
-
-[node name="Rock55" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(-3426, -314)
 rotation = 1.5707964
 scale = Vector2(0.2, 0.5)
 
@@ -251,18 +179,6 @@ scale = Vector2(0.2, 0.5)
 position = Vector2(1308, 646)
 scale = Vector2(0.2, 0.5)
 
-[node name="Rock34" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(1308, 646)
-scale = Vector2(0.2, 0.5)
-
-[node name="Rock18" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(-3164, -97)
-rotation = 3.1415927
-
-[node name="Rock19" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(-2118, -97)
-rotation = 3.1415927
-
 [node name="Rock17" parent="Rocks" instance=ExtResource("5_kmhfv")]
 position = Vector2(-3427, 753)
 rotation = 1.5707964
@@ -273,18 +189,14 @@ position = Vector2(-2487, 1420)
 scale = Vector2(1, 2)
 
 [node name="Rock25" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(1359, -299)
+position = Vector2(147, 1347)
 scale = Vector2(0.5, 3)
 
 [node name="Rock56" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(2174, 348)
+position = Vector2(2196, 198)
 scale = Vector2(0.5, 3)
 
 [node name="Rock57" parent="Rocks" instance=ExtResource("5_kmhfv")]
-position = Vector2(2295, -893)
-scale = Vector2(0.5, 3)
-
-[node name="Rock58" parent="Rocks" instance=ExtResource("5_kmhfv")]
 position = Vector2(2295, -893)
 scale = Vector2(0.5, 3)
 
