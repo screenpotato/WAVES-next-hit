@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b6dqr4jj5ysof"]
 
 [ext_resource type="Script" uid="uid://cu48iy211p3h7" path="res://src/player.gd" id="1_gmfve"]
-[ext_resource type="Texture2D" uid="uid://docveo46t35oa" path="res://art/goose.png" id="2_gmfve"]
+[ext_resource type="Texture2D" uid="uid://bif4dawptegr" path="res://art/ship.png" id="2_gmfve"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gmfve"]
 
@@ -10,7 +10,7 @@ motion_mode = 1
 script = ExtResource("1_gmfve")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.15, 0.15)
+scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_gmfve")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

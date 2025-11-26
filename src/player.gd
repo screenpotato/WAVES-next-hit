@@ -22,8 +22,7 @@ func _input(event):
 
 
 func _physics_process(delta: float) -> void:
-	# TODO: all of this needs work to make it more like underwater diving
-	# and less like a regular platformer with jumping etc
+	# TODO: all of this needs work to make it more like a ship on an ocean...
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
@@ -31,6 +30,7 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 
 	# TODO: see above, needs work
+	# make movement less floaty? or more floaty?
 	var direction_lr := Input.get_axis("ui_left", "ui_right")
 	var direction_ud := Input.get_axis("ui_up", "ui_down")
 	if direction_lr:
@@ -45,7 +45,21 @@ func _physics_process(delta: float) -> void:
 	# TODO: prevent movement while diving?
 	move_and_slide()
 	
-	if direction_lr < 0:
-		sprite.flip_h = true
-	elif direction_lr > 0:
-		sprite.flip_h = false
+	# no longer needed
+	#if direction_lr < 0:
+		#sprite.flip_h = true
+	#elif direction_lr > 0:
+		#sprite.flip_h = false
+	
+	# TODO: make rotation smoother
+	look_at(self.global_position + velocity)
+
+
+func attack() -> void:
+	pass
+	# TODO: implement player attack mode
+
+
+func die() -> void:
+	pass
+	# TODO: implement! what should happen if player dies?
