@@ -9,6 +9,7 @@ extends Node2D
 @onready var player: CharacterBody2D = $Player
 @onready var inventory_panel: PanelContainer = $CanvasLayer/Inventory
 @onready var inventory_list: ItemList = $CanvasLayer/Inventory/ItemList
+@onready var shop_panel: PanelContainer = $CanvasLayer/Shop
 
 var clues_found: int = 0
 var items_in_inventory: Array = []
@@ -26,6 +27,9 @@ func _input(event) -> void:
 	if event.is_action_pressed("inventory"):
 		inventory_panel.visible = not inventory_panel.visible
 		# TODO: pause game while inventory is open?
+	if event.is_action_pressed("shop"):
+		shop_panel.visible = not shop_panel.visible
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

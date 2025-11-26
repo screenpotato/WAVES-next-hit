@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://ybgu6it3qqn4"]
+[gd_scene load_steps=12 format=3 uid="uid://ybgu6it3qqn4"]
 
 [ext_resource type="Texture2D" uid="uid://jx7o7k5ipte2" path="res://art/bg.png" id="1_5q4o7"]
 [ext_resource type="PackedScene" uid="uid://c6qnu0l2i6j88" path="res://src/rock.tscn" id="1_eewff"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://yylbk60s7pj2" path="res://src/rock_3.tscn" id="5_kmhfv"]
 [ext_resource type="PackedScene" uid="uid://w67es3r38738" path="res://src/item.tscn" id="8_5mrjc"]
 [ext_resource type="AudioStream" uid="uid://kvr4iarup21q" path="res://audio/diving.mp3" id="9_kf8lf"]
+[ext_resource type="Texture2D" uid="uid://bfm1lnlyk0yfx" path="res://art/item.png" id="10_uewes"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_rlaii")
@@ -378,6 +379,29 @@ text = "INVENTORY PLACEHOLDER"
 
 [node name="ItemList" type="ItemList" parent="CanvasLayer/Inventory"]
 layout_mode = 2
+
+[node name="Shop" type="PanelContainer" parent="CanvasLayer"]
+visible = false
+offset_left = 482.0
+offset_top = 208.0
+offset_right = 689.0
+offset_bottom = 331.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="ItemList" type="ItemList" parent="CanvasLayer/Shop"]
+layout_mode = 2
+item_count = 5
+item_0/text = "food ration (5 coins)"
+item_0/icon = ExtResource("10_uewes")
+item_1/text = "drinking water (3 coins)"
+item_1/icon = ExtResource("10_uewes")
+item_2/text = "rope (3 coins)"
+item_2/icon = ExtResource("10_uewes")
+item_3/text = "ammunition (1 coin)"
+item_3/icon = ExtResource("10_uewes")
+item_4/text = "paper (1 coin)"
+item_4/icon = ExtResource("10_uewes")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
 offset_right = 40.0
