@@ -2,7 +2,7 @@ extends Node2D
 
 
 @onready var clues: Node = $Clues
-@onready var score_label: Label = $CanvasLayer/ScoreLabel
+@onready var score_label: Label = $CanvasLayer/VBoxContainer/ScoreLabel
 @onready var clue_popup: PopupPanel = $CanvasLayer/PopupPanel
 @onready var popup_label: Label = $CanvasLayer/PopupPanel/PopupLabel
 @onready var audio_player: AudioStreamPlayer = $AudioStreamPlayer
