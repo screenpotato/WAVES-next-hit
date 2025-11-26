@@ -27,8 +27,11 @@ func _input(event) -> void:
 	if event.is_action_pressed("inventory"):
 		inventory_panel.visible = not inventory_panel.visible
 		# TODO: pause game while inventory is open?
+		# TODO: make inventory look decent
 	if event.is_action_pressed("shop"):
 		shop_panel.visible = not shop_panel.visible
+		# TODO: make shop functional
+		# TODO: make inventory look decent
 
 
 
