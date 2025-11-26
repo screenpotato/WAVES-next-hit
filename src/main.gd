@@ -8,9 +8,11 @@ extends Node2D
 @onready var audio_player: AudioStreamPlayer = $AudioStreamPlayer
 @onready var player: CharacterBody2D = $Player
 @onready var inventory_panel: PanelContainer = $CanvasLayer/Inventory
+@onready var inventory_list: ItemList = $CanvasLayer/Inventory/ItemList
 
 var clues_found: int = 0
 var items_in_inventory: Array = []
+var texture_item = preload("res://art/item.png")
 
 
 # Called when the node enters the scene tree for the first time.
@@ -37,6 +39,7 @@ func _on_clue_player_entered(clue):
 	popup_label.text = clue.clue_text
 	# bare minimum for playtesting purposes
 	# needs to be turned into a proper UI later on
+	inventory_list.add_item(clue.clue_text, texture_item)
 	clue_popup.popup_centered()
 	clue.queue_free()
 
